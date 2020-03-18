@@ -1,0 +1,9 @@
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\bin\Debug\StudentManagement.exe.config
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\bin\Debug\StudentManagement.exe
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\bin\Debug\StudentManagement.pdb
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csprojAssemblyReference.cache
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Form1.resources
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\obj\Debug\StudentManagement.Properties.Resources.resources
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\obj\Debug\StudentManagement.csproj.GenerateResource.cache
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\obj\Debug\StudentManagement.exe
+D:\fpt\5_Fall2019\.NET\Projects\StudentManagement\StudentManagement\StudentManagement\obj\Debug\StudentManagement.pdb
