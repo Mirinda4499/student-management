@@ -8,6 +8,6 @@ namespace StudentManagement
 {
     class ConnectionString
     {
-        public static readonly string DB_CONNECTION_STRING = @"Data Source=SE130135\SQLEXPRESS;Initial Catalog=QLSVien;Persist Security Info=True;User ID=sa;Password=123456;Trusted_Connection=True";
+        public static readonly string DB_CONNECTION_STRING = "Data Source=SE130198;Initial Catalog=QLSVien;Integrated Security=True";
     }
 }
