@@ -59,6 +59,7 @@
             // 
             this.sVIENBindingSource.DataMember = "SVIEN";
             this.sVIENBindingSource.DataSource = this.qLSVienDataSet;
+            this.sVIENBindingSource.CurrentChanged += new System.EventHandler(this.sVIENBindingSource_CurrentChanged);
             // 
             // sVIENTableAdapter
             // 

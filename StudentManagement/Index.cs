@@ -55,5 +55,10 @@ namespace StudentManagement
         {
 
         }
+
+        private void sVIENBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
