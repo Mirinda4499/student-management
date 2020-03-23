@@ -31,18 +31,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker_DOB = new System.Windows.Forms.DateTimePicker();
+            this.cbxYear = new System.Windows.Forms.ComboBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.cbxMajor = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtStudentName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtStudentID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.radioButton_Female = new System.Windows.Forms.RadioButton();
-            this.radioButton_Male = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbxMajor = new System.Windows.Forms.ComboBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,13 +65,10 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.cbxYear);
             this.panel2.Controls.Add(this.btnSubmit);
             this.panel2.Controls.Add(this.cbxMajor);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.radioButton_Male);
-            this.panel2.Controls.Add(this.radioButton_Female);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.dateTimePicker_DOB);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtStudentName);
             this.panel2.Controls.Add(this.label3);
@@ -82,17 +76,49 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(3, 91);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 551);
+            this.panel2.Size = new System.Drawing.Size(750, 433);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // dateTimePicker_DOB
+            // cbxYear
             // 
-            this.dateTimePicker_DOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_DOB.Location = new System.Drawing.Point(35, 231);
-            this.dateTimePicker_DOB.Name = "dateTimePicker_DOB";
-            this.dateTimePicker_DOB.Size = new System.Drawing.Size(634, 28);
-            this.dateTimePicker_DOB.TabIndex = 5;
+            this.cbxYear.FormattingEnabled = true;
+            this.cbxYear.Location = new System.Drawing.Point(35, 223);
+            this.cbxYear.Name = "cbxYear";
+            this.cbxYear.Size = new System.Drawing.Size(121, 24);
+            this.cbxYear.TabIndex = 12;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSubmit.Location = new System.Drawing.Point(242, 365);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(240, 37);
+            this.btnSubmit.TabIndex = 11;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // cbxMajor
+            // 
+            this.cbxMajor.FormattingEnabled = true;
+            this.cbxMajor.Location = new System.Drawing.Point(35, 309);
+            this.cbxMajor.Name = "cbxMajor";
+            this.cbxMajor.Size = new System.Drawing.Size(634, 24);
+            this.cbxMajor.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(35, 272);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 24);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Major";
             // 
             // label4
             // 
@@ -100,9 +126,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 196);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 24);
+            this.label4.Size = new System.Drawing.Size(49, 24);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Date Of Birth";
+            this.label4.Text = "Year";
             // 
             // txtStudentName
             // 
@@ -148,76 +174,11 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Student ID";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 289);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 24);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Gender";
-            // 
-            // radioButton_Female
-            // 
-            this.radioButton_Female.AutoSize = true;
-            this.radioButton_Female.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_Female.Location = new System.Drawing.Point(41, 316);
-            this.radioButton_Female.Name = "radioButton_Female";
-            this.radioButton_Female.Size = new System.Drawing.Size(95, 28);
-            this.radioButton_Female.TabIndex = 7;
-            this.radioButton_Female.TabStop = true;
-            this.radioButton_Female.Text = "Female";
-            this.radioButton_Female.UseVisualStyleBackColor = true;
-            // 
-            // radioButton_Male
-            // 
-            this.radioButton_Male.AutoSize = true;
-            this.radioButton_Male.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_Male.Location = new System.Drawing.Point(41, 343);
-            this.radioButton_Male.Name = "radioButton_Male";
-            this.radioButton_Male.Size = new System.Drawing.Size(72, 28);
-            this.radioButton_Male.TabIndex = 8;
-            this.radioButton_Male.TabStop = true;
-            this.radioButton_Male.Text = "Male";
-            this.radioButton_Male.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 391);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 24);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Major";
-            // 
-            // cbxMajor
-            // 
-            this.cbxMajor.FormattingEnabled = true;
-            this.cbxMajor.Location = new System.Drawing.Point(35, 430);
-            this.cbxMajor.Name = "cbxMajor";
-            this.cbxMajor.Size = new System.Drawing.Size(634, 24);
-            this.cbxMajor.TabIndex = 10;
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSubmit.Location = new System.Drawing.Point(249, 484);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(240, 37);
-            this.btnSubmit.TabIndex = 11;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 642);
+            this.ClientSize = new System.Drawing.Size(755, 525);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormAdd";
@@ -240,12 +201,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtStudentName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_DOB;
-        private System.Windows.Forms.RadioButton radioButton_Male;
-        private System.Windows.Forms.RadioButton radioButton_Female;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbxMajor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.ComboBox cbxYear;
     }
 }

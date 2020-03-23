@@ -67,6 +67,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVienDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SinhVienDAO.cs" />
+    <Compile Include="SinhVienDTOS.cs" />
     <EmbeddedResource Include="FormAdd.resx">
       <DependentUpon>FormAdd.cs</DependentUpon>
     </EmbeddedResource>

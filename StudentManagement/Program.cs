@@ -16,8 +16,9 @@ namespace StudentManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            SinhVienDAO svDAO = new SinhVienDAO();          
             Application.Run(new Index());
-            Application.Run(new FormAdd());
+            
         }
     }
 }

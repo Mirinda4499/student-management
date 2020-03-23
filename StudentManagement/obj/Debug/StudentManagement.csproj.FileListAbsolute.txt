@@ -26,3 +26,13 @@ C:\Users\ADMIN\student-management\StudentManagement\obj\Debug\StudentManagement.
 C:\Users\ADMIN\student-management\StudentManagement\obj\Debug\StudentManagement.Properties.Resources.resources
 C:\Users\ADMIN\student-management\StudentManagement\obj\Debug\StudentManagement.csproj.GenerateResource.cache
 C:\Users\ADMIN\student-management\StudentManagement\obj\Debug\StudentManagement.FormAdd.resources
+D:\student-management\StudentManagement\bin\Debug\StudentManagement.exe.config
+D:\student-management\StudentManagement\bin\Debug\StudentManagement.exe
+D:\student-management\StudentManagement\bin\Debug\StudentManagement.pdb
+D:\student-management\StudentManagement\obj\Debug\StudentManagement.csprojAssemblyReference.cache
+D:\student-management\StudentManagement\obj\Debug\StudentManagement.FormAdd.resources
+D:\student-management\StudentManagement\obj\Debug\StudentManagement.Index.resources
+D:\student-management\StudentManagement\obj\Debug\StudentManagement.Properties.Resources.resources
+D:\student-management\StudentManagement\obj\Debug\StudentManagement.csproj.GenerateResource.cache
+D:\student-management\StudentManagement\obj\Debug\StudentManagement.exe
+D:\student-management\StudentManagement\obj\Debug\StudentManagement.pdb
